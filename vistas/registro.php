@@ -10,12 +10,11 @@
   <div class="row">
     
             <div class="col-10">
-             <input type="text" class="form-control" id="nombre" placeholder="Descripcion de producto" required >
+             <input type="text" class="form-control nombre" id="nombre" placeholder="Descripcion de producto" required >
             </div>
             
-            
             <div class="col-4 offset-1 mt-2">
-             <input type="text" id="cant" class="form-control" placeholder="Cant" required>
+             <input type="text" id="cant" class="form-control" placeholder="Cant"  maxLength="3" required>
             </div>
 
 

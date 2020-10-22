@@ -1,18 +1,23 @@
 (function() {
-
     $("#cuerpo").load('vistas/tabla.php')
+
 
     $(".btnnuevo").click(function() {
 
         $("#cuerpo").html('')
         $("#cuerpo").load('vistas/registro.php')
-
+        limpiar()
 
     })
 
 
 
-
+    function limpiar() {
+        $("#nombre").val('')
+        $("#cant").val('')
+        $("#precio").val('')
+        $("#nombre").focus()
+    }
 
 
 })();

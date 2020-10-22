@@ -177,8 +177,11 @@
                 <div class="container">
                     <div class="row">
                         <div id="cuerpo" class="col-10 offset-1  d-flex justify-content-center ">
+                                  
+                                  <?php
+                                    include 'vistas/registro.php'
 
-
+                                    ?>
 
                         </div>
 

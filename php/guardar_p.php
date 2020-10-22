@@ -3,7 +3,7 @@ if($_POST){
     
     include'../bdd/conexion.php';
 
-$_descripcion=$_POST['producto'];
+$_descripcion=limpiarString(limpiarNombre(ucwords($_POST['producto'])));
 $cant=$_POST['cantidad'];
 $valor=$_POST['valor'];
 
@@ -23,6 +23,23 @@ return;
 
 }
 
+
+
+
+
+
+function limpiarNombre($string ){
+    $string = htmlentities($string);
+    $string = preg_replace('/\&(.)[^;]*;/', '\\1', $string);
+    return $string;
+   }
+
+function limpiarString($texto)
+{
+      $textoLimpio = preg_replace('([^A-Za-z0-9])', ' ', $texto);	
+           					
+      return $textoLimpio;
+}
 
 
 
