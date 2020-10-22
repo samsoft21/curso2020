@@ -16,7 +16,7 @@
         $("#nombre").val('')
         $("#cant").val('')
         $("#precio").val('')
-        $("#nombre").focus()
+
     }
 
 
